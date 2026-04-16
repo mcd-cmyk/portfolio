@@ -688,12 +688,12 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
+    align-items: start;
 }
 
 .project-gallery img {
     width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
+    height: auto;
     border-radius: 4px;
     border: 1px solid var(--dark-border);
     transition: all 0.4s var(--ease-out);
@@ -708,7 +708,6 @@ img {
 
 .project-gallery video {
     width: 100%;
-    aspect-ratio: 16/9;
     border-radius: 4px;
     border: 1px solid var(--dark-border);
 }
