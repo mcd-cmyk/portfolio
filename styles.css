@@ -138,6 +138,8 @@ img {
 }
 
 .nav-links a:hover::after {
+    width: 100%;
+}
 
 /* Special colour treatment for Meeting the Abyss nav link */
 .nav-links a[href="abyss.html"] {
@@ -147,8 +149,6 @@ img {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: nameShift 12s ease-in-out infinite;
-}
-    width: 100%;
 }
 
 .nav-toggle {
