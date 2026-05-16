@@ -226,7 +226,7 @@
 
         const px = ex * w, py = ey * h;
         const speed = Math.sqrt(evx**2 + evy**2);
-        const size = (80 + speed * 2500 + Math.sin(time*0.8)*15) * (h/800);
+        const size = (90 + speed * 2500 + Math.sin(time*0.8)*15) * (h/800);
 
         // Colour cycles through green, blue, pink, violet — non-linearly
         const colourCycle = [155, 210, 330, 270, 180, 290, 155]; // green, blue, pink, violet, cyan, violet, green
