@@ -143,6 +143,7 @@ img {
 
 /* Special colour treatment for Meeting the Abyss nav link */
 .nav-links a[href="abyss.html"] {
+.mobile-menu a[href="abyss.html"] {
     background: linear-gradient(90deg, var(--warm-white), #2d6a4f, #4a7fb5, #c45e6a, #8b6cc1, #2d6a4f);
     background-size: 400% 100%;
     -webkit-background-clip: text;
