@@ -582,6 +582,7 @@ img {
 .content-section p {
     margin-bottom: var(--space-sm);
     color: var(--soft-white);
+    text-align: justify;
 }
 
 .content-section .highlight {
@@ -686,6 +687,7 @@ img {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--soft-white);
+    text-align: justify;
 }
 
 .project-gallery {
@@ -848,10 +850,12 @@ img {
     font-weight: 300;
     font-size: clamp(3rem, 6vw, 5rem);
     position: relative;
-    background: linear-gradient(135deg, var(--warm-white), var(--accent-violet));
+    background: linear-gradient(135deg, var(--warm-white), #2d6a4f, #4a7fb5, #c45e6a, #8b6cc1, #2d6a4f);
+    background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: nameShift 12s ease-in-out infinite;
 }
 
 .abyss-hero .abyss-tagline {
@@ -873,6 +877,7 @@ img {
 .abyss-content p {
     color: var(--soft-white);
     line-height: 1.9;
+    text-align: justify;
 }
 
 .abyss-highlight {
@@ -890,17 +895,21 @@ img {
 }
 
 .abyss-gallery {
-    max-width: 100%;
-    margin: 0;
-    padding: 0 0 var(--space-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg) var(--space-xl);
+    position: relative;
+    z-index: 1;
 }
 
 .abyss-gallery img {
     width: 100%;
     max-height: 70vh;
     object-fit: cover;
-    border-radius: 0;
-    border: none;
+    object-position: center;
+    border-radius: 6px;
+    border: 1px solid var(--dark-border);
+    box-shadow: 0 0 60px rgba(139, 108, 193, 0.1);
 }
 
 .abyss-placeholder {
