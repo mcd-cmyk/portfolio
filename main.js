@@ -259,11 +259,11 @@
         ctx.fillRect(px-size, py-size, size*2, size*2);
 
         // Bright center
-        const bright = ctx.createRadialGradient(px, py, 0, px, py, size*0.5);
-        bright.addColorStop(0, hsla(hue, 30, 75, (0.1 + speed*6) * intensityMult));
-        bright.addColorStop(0.5, hsla(hue, 35, 55, 0.03 * intensityMult));
-        bright.addColorStop(1, 'rgba(0,0,0,0)');
-        ctx.fillStyle = bright;
+       const bright = ctx.createRadialGradient(px, py, 0, px, py, size*0.5);
+       bright.addColorStop(0, hsla(hue, 30, 75, (0.1 + speed*6) * intensityMult));
+       bright.addColorStop(0.5, hsla(hue, 35, 55, 0.03 * intensityMult));
+       bright.addColorStop(1, hsla(hue, sat, 50, 0));
+       ctx.fillStyle = bright;
         ctx.fillRect(px-size*0.3, py-size*0.3, size*0.6, size*0.6);
 
         // Trail
