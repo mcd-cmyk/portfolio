@@ -675,7 +675,7 @@ img {
 .project-detail {
     max-width: 1000px;
     margin: 0 auto;
-    padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+    padding: var(--space-md) var(--space-lg) var(--space-md);
 }
 
 .project-detail h1 {
